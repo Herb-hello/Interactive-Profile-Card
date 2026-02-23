@@ -5,26 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interactive Profile Card</title>
     <link href="styles.css" rel="stylesheet" />
-    <script scr="script.js" defer></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <article class="profile-card">
-      <header>
-        <h1>Kylie Seto</h1>
-        <div class="headshot">
-          <img src="JDC Headshot.jpg" />
-        </div>
-        <p>
-          Hello! I am a 4th year business student studying Management
-          Information Systems (MIS) with a minor in Computer Science at Simon
-          Fraser Univeristy (SFU) located in Vancouver, BC, Canada.
-        </p>
-        <button id="btn-lm">Learn More!</button>
-      </header>
-      <section class="hidden-info" id="hidden-info">
+      <h1>Kylie Seto</h1>
+      <div class="headshot">
+        <img class="img-pfp" src="JDC Headshot.jpg" />
+      </div>
+      <p>
+        Hello! I am a 4th year business student studying Management Information
+        Systems (MIS) with a minor in Computer Science at Simon Fraser
+        Univeristy (SFU) located in Vancouver, BC, Canada.
+      </p>
+      <section class="hidden-text" id="hidden-text">
         <p><strong>Hobbies: </strong>Hiking, backpacking, bouldering</p>
         <p><strong>Currently Learning: </strong>Web development</p>
       </section>
+      <button class="btn-mi" id="btn-mi">More Info</button>
     </article>
   </body>
 </html>

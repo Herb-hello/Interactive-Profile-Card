@@ -1,12 +1,12 @@
 :root {
-  font-family: Arial, Helvetica, sans-serif;
   --background: #f0efeb;
   --primary: #20502e;
   --secondary: #6b8f71;
   --accent: #a3b18a;
-  --btn-hover: #5A3E2B;
+  --btn-hover: #5a3e2b;
 }
 body {
+  font-family: Arial, Helvetica, sans-serif;
   background-color: var(--background);
   color: var(--background);
   display: flex;
@@ -14,15 +14,22 @@ body {
 }
 .profile-card {
   background-color: var(--primary);
-  width: 320px; /* fixed width */
-  height: 425px; /* fixed height */
+  width: 320px;
+  max-height: 415px;
+  overflow: hidden;
   border-radius: 10px;
   padding: 15px;
+  transition: max-height 0.75s ease;
 }
 
-img {
+.img-pfp {
   width: 150px;
   padding: 5px;
+  transition: transform 0.75s ease;
+}
+
+.show-more .img-pfp {
+  transform: scale(1.15);
 }
 
 .headshot {
@@ -34,18 +41,48 @@ h1 {
   text-align: center;
 }
 
-#btn-lm {
+.btn-mi {
   display: block;
   padding: 5px;
   margin: auto;
   border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-.hidden-info{
-    display:none;
+.hidden-text {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    opacity 0.5s ease,
+    max-height 0.5s ease;
 }
 
-#btn-lm:hover{
-    background-color: var(--btn-hover);
-    color: var(--background);
+.show-more.hidden-text {
+  opacity: 1;
+  max-height: 200px;
 }
+
+.btn-mi:hover {
+  background-color: var(--btn-hover);
+  color: var(--background);
+}
+
+.show-more.profile-card {
+  max-height: 470px;
+}
+
+/* .show-more img{
+  animation: enlarge;
+  animation-duration: 10s;
+}
+
+@keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+} */
