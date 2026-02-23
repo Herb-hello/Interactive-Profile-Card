@@ -2,7 +2,7 @@
 
 Interactive Profile Card to practice for my CMPT 272 Intro to Web Dev midterm. I am only using HTML, CSS, and JavaScript to practice the fundementals.
 
-## Create an interactive user profile card using HTML, CSS, and JavaScript. The profile card should display a user's picture, name, and a short bio. Upon clicking a "More Info" button, the card should expand to display additional details, such as the user's hobbies, birthdate, and favourite quote.
+Create an interactive user profile card using HTML, CSS, and JavaScript. The profile card should display a user's picture, name, and a short bio. Upon clicking a "More Info" button, the card should expand to display additional details, such as the user's hobbies, birthdate, and favourite quote.
 
 ## Requirements:
 
